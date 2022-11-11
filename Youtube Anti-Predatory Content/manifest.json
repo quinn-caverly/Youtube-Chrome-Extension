@@ -1,0 +1,19 @@
+{
+    "name":"Youtube AntiPredatory Content",
+    "description":"Removes predatory attention grabbing content from Youtube",
+    "version":"0.0.1",
+
+    "icons": {
+        "16":"icon.png",
+        "32":"icon.png",
+        "128":"icon.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["blockcontent.js"]
+        }
+    ],
+    "manifest_version":2
+}
