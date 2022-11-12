@@ -15,19 +15,14 @@ function urlChanged() {
 	var pageManager = document.getElementById("page-manager");
 
 	if (location.href == "https://www.youtube.com/") {
-
-		//var pageManager = document.getElementById("page-manager");
-        console.log("this was run");
         pageManager = document.getElementById("page-manager");
         pageManager.style.display = "none";
-
-		//pageManager.parentElement.removeChild(pageManager);
 	}
+
 	//the url wil contain "watch" if it is a video, thus is will have a recommended page
 	else if (location.href.toString().includes("watch")) {
-		console.log("ran");
+
 		resetPageManagerStyle(pageManager);
-		console.log("ran2");
 
 		var contents = document.getElementsByClassName(
 			"style-scope ytd-watch-next-secondary-results-renderer"
