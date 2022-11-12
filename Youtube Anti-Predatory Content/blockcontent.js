@@ -28,12 +28,8 @@ function urlChanged() {
 			"style-scope ytd-watch-next-secondary-results-renderer"
 		);
 
-		console.log("ran3");
-
 		for (let i = 0; i < contents.length; i++) {
-			console.log("attempting to remove");
 			contents[i].style.display = "none";
-			console.log("removed successfully");
 		}
 	} else {
 		pageManager.style.display = "flex";
